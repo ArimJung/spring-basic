@@ -1,0 +1,9 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="phone" class="test.Galaxy" init-method="initMethod" destroy-method="destroyMethod"/>
+<bean id="iphone" class="test.IPhone">
+<constructor-arg ref="aw"/>
+<constructor-arg value="9890"/>
+</bean>
+<bean id="aw" class="test.AppleWatch"/>
+<bean id="sw" class="test.GalaxyWatch"/>
+</beans>
